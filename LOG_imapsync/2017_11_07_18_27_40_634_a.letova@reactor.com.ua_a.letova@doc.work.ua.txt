@@ -1,0 +1,331 @@
+Transfer started at Tue Nov  7 18:27:40 2017
+PID is 15403
+Log file is LOG_imapsync/2017_11_07_18_27_40_634_a.letova@reactor.com.ua_a.letova@doc.work.ua.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 0.83 0.97 0.98 1/1512 on 2 cores
+Current directory is /home/e.zharko/github/imapsync
+Real user id is root (uid 0)
+Effective user id is root (euid 0)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is e-zharko, a 15.6 GiB [linux] system (Linux e-zharko 4.9.0-040900-generic #201612111631 SMP Sun Dec 11 21:33:00 UTC 2016 x86_64)
+with Perl 5.22.1 and Mail::IMAPClient 3.38
+Command line used:
+/usr/bin/imapsync --host1 imap.gmail.com --user1 a.letova@reactor.com.ua --password1 MASKED -ssl1 --host2 imap.gmail.com --user2 a.letova@doc.work.ua --password2 MASKED -ssl2
+Temp directory is /tmp  ( to change it use --tmpdir dirpath )
+PID file is /tmp/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+Writing my PID 15403 in /tmp/imapsync.pid
+Modules version list:
+Authen::NTLM         1.09
+Compress::Zlib       2.069
+Crypt::OpenSSL::RSA  0.28
+Data::Uniqid         0.12
+Digest::HMAC_MD5     1.01
+Digest::HMAC_SHA1    1.03
+Digest::MD5          2.54
+File::Copy::Recursive 0.38
+File::Spec           3.56
+Getopt::Long         2.45
+HTML::Entities       3.69
+IO::Socket           1.38
+IO::Socket::INET     1.35
+IO::Socket::INET6    2.72
+IO::Socket::SSL      2.024
+IO::Tee              0.64
+JSON                 2.90
+JSON::WebToken       0.10
+LWP                  6.15
+Mail::IMAPClient     3.38
+Net::Ping            2.43
+Net::SSLeay          1.72
+Term::ReadKey        2.33
+Test::MockObject     1.20161202
+Time::HiRes          1.9726
+URI::Escape          3.31
+Unicode::String      2.10
+( use --no-modulesversion to turn off printing this Perl modules list )
+SSL debug mode level is --debugssl 1 (can be set from 0 meaning no debug to 4 meaning max debug)
+Host1: SSL default mode is like --sslargs1 SSL_verify_mode=0 meaning SSL_VERIFY_NONE on host1 (do not check the certificate server)
+Host1: Use --sslargs1 SSL_verify_mode=1 for SSL_VERIFY_PEER on host1
+Host2: SSL default mode is like --sslargs2 SSL_verify_mode=0 meaning SSL_VERIFY_NONE on host2 (do not check the certificate server)
+Host2: Use --sslargs2 SSL_verify_mode=1 for SSL_VERIFY_PEER on host2
+Info: turned ON syncinternaldates, will set the internal dates (arrival dates) on host2 same as host1.
+Host1: will try to use LOGIN authentication on host1
+Host2: will try to use LOGIN authentication on host2
+Host1: imap connexion timeout is 120 seconds
+Host2: imap connexion timeout is 120 seconds
+Host1: IMAP server [imap.gmail.com] port [993] user [a.letova@reactor.com.ua]
+Host2: IMAP server [imap.gmail.com] port [993] user [a.letova@doc.work.ua]
+Host1: connecting and login on host1 [imap.gmail.com] port [993] with user [a.letova@reactor.com.ua]
+Host1 IP address: 173.194.222.109
+Host1 banner: * OK Gimap ready for requests from 46.164.134.234 y17mb241235923lfi
+Host1 capability before authentication: IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+Host1: success login on [imap.gmail.com] with user [a.letova@reactor.com.ua] auth [LOGIN]
+Host2: connecting and login on host2 [imap.gmail.com] port [993] with user [a.letova@doc.work.ua]
+Host2 IP address: 173.194.222.109
+Host2 banner: * OK Gimap ready for requests from 46.164.134.234 v9mb189649608ltc
+Host2 capability before authentication: IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 XYZZY SASL-IR AUTH=XOAUTH2 AUTH=PLAIN AUTH=PLAIN-CLIENTTOKEN AUTH=OAUTHBEARER AUTH=XOAUTH
+Host2: success login on [imap.gmail.com] with user [a.letova@doc.work.ua] auth [LOGIN]
+Host1: state Authenticated
+Host2: state Authenticated
+Host1 capability once authenticated: IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+Host2 capability once authenticated: IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT LIST-EXTENDED LIST-STATUS LITERAL- SPECIAL-USE APPENDLIMIT=35651584
+
+Host1: found ID capability. Sending/receiving ID, presented in raw IMAP for now.
+In order to avoid sending/receiving ID, use option --noid
+Sending: 4 ID ("name" "imapsync" "version" "1.836" "os" "linux" "vendor" "Gilles LAMIRAL" "support-url" "http://imapsync.lamiral.info/" "date" "05-Sep-2017 16:14:53 +0000" "side" "host1")
+Sent 180 bytes
+Read: 	* ID ("name" "GImap" "vendor" "Google, Inc." "support-url" "https://support.google.com/mail" "version" "gmail_imap_171031.09_p0" "remote-host" "46.164.134.234")
+  	4 OK Success
+
+
+Host2: found ID capability. Sending/receiving ID, presented in raw IMAP for now.
+In order to avoid sending/receiving ID, use option --noid
+Sending: 4 ID ("name" "imapsync" "version" "1.836" "os" "linux" "vendor" "Gilles LAMIRAL" "support-url" "http://imapsync.lamiral.info/" "date" "05-Sep-2017 16:14:53 +0000" "side" "host2")
+Sent 180 bytes
+Read: 	* ID ("name" "GImap" "vendor" "Google, Inc." "support-url" "https://support.google.com/mail" "version" "gmail_imap_171031.09_p0" "remote-host" "46.164.134.234")
+  	4 OK Success
+
+
+Host2: found quota, presented in raw IMAP
+Sending: 5 GETQUOTAROOT INBOX
+Sent 22 bytes
+Read: 	* QUOTAROOT "INBOX" ""
+  	* QUOTA "" (STORAGE 1490193 15728640)
+  	5 OK Success
+
+Host2: Quota current storage is 1525957632 bytes. Limit is 16106127360 bytes. So 9.47 % full
+Host1: found 10 folders.
+Host2: found 10 folders.
+Including all folders found by default. Use --subscribed or --folder or --folderrec or --include to select specific folders. Use --exclude to unselect specific folders.
+Host1: checking all wanted folders exist.
+Host1: checking all wanted folders are selectable. Use --nocheckselectable to avoid this check.
+Host1: warning! ignoring folder [Gmail] because it is not selectable
+Host1: guessing separator from folder listing: [/]
+Host1: separator given by NAMESPACE: [/]
+Host2: guessing separator from folder listing: [/]
+Host2: separator given by NAMESPACE: [/]
+Host1: guessing prefix from folder listing: []
+Host1: prefix given by NAMESPACE: []
+Host2: guessing prefix from folder listing: []
+Host2: prefix given by NAMESPACE: []
+Host1 separator and prefix: [/][]
+Host2 separator and prefix: [/][]
+Turned off automapping folders ( use --automap to turn on automapping )
+
+++++ Listing folders
+All foldernames are presented between brackets like [X] where X is the foldername.
+When a foldername contains non-ASCII characters it is presented in the form
+[X] = [Y] where
+X is the imap foldername you have to use in command line options and
+Y is the uft8 output just printed for convenience, to recognize it.
+
+Host1 folders list (first the raw imap format then the [X] = [Y]):
+* LIST (\HasNoChildren) "/" "INBOX"
+* LIST (\HasNoChildren) "/" "Trash"
+* LIST (\HasChildren \Noselect) "/" "[Gmail]"
+* LIST (\HasNoChildren \Important) "/" "[Gmail]/&BBIEMAQ2BD0EPgQ1-"
+* LIST (\All \HasNoChildren) "/" "[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-"
+* LIST (\HasNoChildren \Trash) "/" "[Gmail]/&BBoEPgRABDcEOAQ9BDA-"
+* LIST (\HasNoChildren \Sent) "/" "[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+* LIST (\Flagged \HasNoChildren) "/" "[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-"
+* LIST (\HasNoChildren \Junk) "/" "[Gmail]/&BCEEPwQwBDw-"
+* LIST (\Drafts \HasNoChildren) "/" "[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-"
+19 OK Success
+
+[INBOX]
+[Trash]
+[[Gmail]]
+[[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные]
+[[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные]
+[[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное]
+[[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта]
+[[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина]
+[[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам]
+[[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики]
+
+Host2 folders list (first the raw imap format then the [X] = [Y]):
+* LIST (\HasNoChildren) "/" "INBOX"
+* LIST (\HasNoChildren) "/" "Trash"
+* LIST (\HasChildren \Noselect) "/" "[Gmail]"
+* LIST (\HasNoChildren \Important) "/" "[Gmail]/&BBIEMAQ2BD0EPgQ1-"
+* LIST (\All \HasNoChildren) "/" "[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-"
+* LIST (\HasNoChildren \Trash) "/" "[Gmail]/&BBoEPgRABDcEOAQ9BDA-"
+* LIST (\HasNoChildren \Sent) "/" "[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+* LIST (\Flagged \HasNoChildren) "/" "[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-"
+* LIST (\HasNoChildren \Junk) "/" "[Gmail]/&BCEEPwQwBDw-"
+* LIST (\Drafts \HasNoChildren) "/" "[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-"
+10 OK Success
+
+[INBOX]
+[Trash]
+[[Gmail]]
+[[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные]
+[[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные]
+[[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное]
+[[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта]
+[[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина]
+[[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам]
+[[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики]
+
+
+Folders sizes before the synchronization.
+You can remove foldersizes listings by using "--nofoldersizes" and  "--nofoldersizesatend"
+but then you will also loose the ETA (Estimation Time of Arrival) given after each message copy.
+++++ Calculating sizes of 9 folders on Host1
+Host1 folder     1/9 [INBOX]                             Size: 579869683 Messages:  8184 Biggest:  27215643
+Host1 folder     2/9 [Trash]                             Size:         0 Messages:     0 Biggest:         0
+Host1 folder     3/9 [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные] Size: 170378564 Messages:   851 Biggest:  27090688
+Host1 folder     4/9 [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные] Size:  37552316 Messages:   167 Biggest:   5877465
+Host1 folder     5/9 [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное]Use of uninitialized value $size in addition (+) at /usr/bin/imapsync line 5505.
+ Size: 614136627 Messages:  8225 Biggest:  27215643
+Host1 folder     6/9 [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта] Size: 757180887 Messages:  9179 Biggest:  27215643
+Host1 folder     7/9 [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина] Size:   6266299 Messages:   121 Biggest:   2872652
+Host1 folder     8/9 [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам] Size:  20054938 Messages:    96 Biggest:   1075964
+Host1 folder     9/9 [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики] Size:         0 Messages:     0 Biggest:         0
+Host1 Nb folders:                9 folders
+Host1 Nb messages:           26823 messages
+Host1 Total size:       2185439314 bytes (2.035 GiB)
+Host1 Biggest message:    27215643 bytes (25.955 MiB)
+Host1 Time spent:            194.6 seconds
+++++ Calculating sizes of 9 folders on Host2
+Host2 folder     1/9 [INBOX]                             Size: 580113941 Messages:  8195 Biggest:  27215643
+Host2 folder     2/9 [Trash]                             Size:         0 Messages:     0 Biggest:         0
+Host2 folder     3/9 [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные] Size: 170662585 Messages:   852 Biggest:  27090688
+Host2 folder     4/9 [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные] Size:  37552316 Messages:   167 Biggest:   5877465
+Host2 folder     5/9 [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное] Size: 628217092 Messages:  8361 Biggest:  27215643
+Host2 folder     6/9 [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта] Size: 757764828 Messages:  9196 Biggest:  27215643
+Host2 folder     7/9 [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина] Size:   6266299 Messages:   121 Biggest:   2872652
+Host2 folder     8/9 [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам] Size:  20054938 Messages:    96 Biggest:   1075964
+Host2 folder     9/9 [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики] Size:         0 Messages:     0 Biggest:         0
+Host2 Nb folders:                9 folders
+Host2 Nb messages:           26988 messages
+Host2 Total size:       2200631999 bytes (2.049 GiB)
+Host2 Biggest message:    27215643 bytes (25.955 MiB)
+Host2 Time spent:            109.2 seconds
+++++ Looping on each one of 9 folders to sync
+Folder     1/9 [INBOX]                             -> [INBOX]                            
+Host1 folder [INBOX] has 8184 messages in total (mentioned by SELECT)
+Host2 folder [INBOX] has 8195 messages in total (mentioned by SELECT)
+Host2 folder [INBOX] permanentflags: 
+Host1 folder [INBOX] considering 8184 messages
+Host2 folder [INBOX] considering 8195 messages
+msg INBOX/9980 {22999}        copied to INBOX/8286       0.00 msgs/s  0.110 KiB/s 22.460 KiB copied  ETA: Thu Dec 21 17:23:41 2017  3797253 s  18640/26823 msgs left
+msg INBOX/17925 {5365}        copied to INBOX/8287       0.01 msgs/s  0.135 KiB/s 27.699 KiB copied  ETA: Wed Nov 29 20:01:09 2017  1905900 s  18639/26823 msgs left
+Folder     2/9 [Trash]                             -> [Trash]                            
+Host1 folder [Trash] has 0 messages in total (mentioned by SELECT)
+Host2 folder [Trash] has 0 messages in total (mentioned by SELECT)
+Host2 folder [Trash] permanentflags: 
+Host1 folder [Trash] considering 0 messages
+Host2 folder [Trash] considering 0 messages
+Folder     3/9 [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные] -> [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные]
+Host1 folder [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] has 851 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] has 852 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] permanentflags: 
+Host1 folder [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] considering 851 messages
+Host2 folder [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] considering 852 messages
+msg [Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-/851 {5365}          copied to [Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-/854        0.01 msgs/s  0.143 KiB/s 32.938 KiB copied  ETA: Thu Nov 23 13:25:01 2017  1363708 s  17788/26823 msgs left
+Folder     4/9 [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные] -> [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные]
+Host1 folder [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] has 167 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] has 167 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] permanentflags: 
+Host1 folder [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] considering 167 messages
+Host2 folder [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] considering 167 messages
+Folder     5/9 [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное] -> [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное]
+Host1 folder [[Gmail]/&BBIEMAQ2BD0EPgQ1-] has 8225 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBIEMAQ2BD0EPgQ1-] has 8361 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBIEMAQ2BD0EPgQ1-] permanentflags: 
+Host1 folder [[Gmail]/&BBIEMAQ2BD0EPgQ1-] considering 8225 messages
+Host2 folder [[Gmail]/&BBIEMAQ2BD0EPgQ1-] considering 8361 messages
+msg [Gmail]/&BBIEMAQ2BD0EPgQ1-/9723 {5365}         copied to [Gmail]/&BBIEMAQ2BD0EPgQ1-/8393       0.01 msgs/s  0.089 KiB/s 38.178 KiB copied  ETA: Sun Nov 19 09:51:46 2017  1005114 s  9396/26823 msgs left
+Folder     6/9 [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта] -> [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта]
+Host1 folder [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] has 9179 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] has 9196 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] permanentflags: 
+Host1 folder [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] considering 9179 messages
+Host2 folder [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] considering 9196 messages
+Host2 folder [Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA- selected: 9196 messages,  duplicates: 3
+msg [Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-/79243 {5365}        copied to [Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-/9586       0.01 msgs/s  0.066 KiB/s 43.417 KiB copied  ETA: Wed Nov  8 02:36:54 2017  28395 s  217/26823 msgs left
+Folder     7/9 [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина] -> [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина]
+Host1 folder [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] has 121 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] has 121 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] permanentflags: 
+Host1 folder [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] considering 121 messages
+Host2 folder [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] considering 121 messages
+Folder     8/9 [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам] -> [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам]
+Host1 folder [[Gmail]/&BCEEPwQwBDw-] has 96 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BCEEPwQwBDw-] has 96 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BCEEPwQwBDw-] permanentflags: 
+Host1 folder [[Gmail]/&BCEEPwQwBDw-] considering 96 messages
+Host2 folder [[Gmail]/&BCEEPwQwBDw-] considering 96 messages
+Folder     9/9 [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики] -> [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики]
+Host1 folder [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] has 0 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] has 0 messages in total (mentioned by SELECT)
+Host2 folder [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] permanentflags: 
+Host1 folder [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] considering 0 messages
+Host2 folder [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] considering 0 messages
+++++ End looping on each folder
+
+Folders sizes after the synchronization.
+You can remove this foldersizes listing by using  "--nofoldersizesatend"
+++++ Calculating sizes of 9 folders on Host1
+Host1 folder     1/9 [INBOX]                             Size: 579869683 Messages:  8184 Biggest:  27215643
+Host1 folder     2/9 [Trash]                             Size:         0 Messages:     0 Biggest:         0
+Host1 folder     3/9 [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные] Size: 170378564 Messages:   851 Biggest:  27090688
+Host1 folder     4/9 [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные] Size:  37552316 Messages:   167 Biggest:   5877465
+Host1 folder     5/9 [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное] Size: 614141992 Messages:  8225 Biggest:  27215643
+Host1 folder     6/9 [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта] Size: 757180887 Messages:  9179 Biggest:  27215643
+Host1 folder     7/9 [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина] Size:   6266299 Messages:   121 Biggest:   2872652
+Host1 folder     8/9 [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам] Size:  20054938 Messages:    96 Biggest:   1075964
+Host1 folder     9/9 [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики] Size:         0 Messages:     0 Biggest:         0
+Host1 Nb folders:                9 folders
+Host1 Nb messages:           26823 messages
+Host1 Total size:       2185444679 bytes (2.035 GiB)
+Host1 Biggest message:    27215643 bytes (25.955 MiB)
+Host1 Time spent:            186.7 seconds
+++++ Calculating sizes of 9 folders on Host2
+Host2 folder     1/9 [INBOX]                             Size: 580138737 Messages:  8197 Biggest:  27215643
+Host2 folder     2/9 [Trash]                             Size:         0 Messages:     0 Biggest:         0
+Host2 folder     3/9 [[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-] = [[Gmail]/Отправленные] Size: 170662585 Messages:   852 Biggest:  27090688
+Host2 folder     4/9 [[Gmail]/&BB8EPgQ8BDUERwQ1BD0EPQRLBDU-] = [[Gmail]/Помеченные] Size:  37552316 Messages:   167 Biggest:   5877465
+Host2 folder     5/9 [[Gmail]/&BBIEMAQ2BD0EPgQ1-] = [[Gmail]/Важное] Size: 628218889 Messages:  8362 Biggest:  27215643
+Host2 folder     6/9 [[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-] = [[Gmail]/Вся почта] Size: 757764828 Messages:  9196 Biggest:  27215643
+Host2 folder     7/9 [[Gmail]/&BBoEPgRABDcEOAQ9BDA-] = [[Gmail]/Корзина] Size:   6266299 Messages:   121 Biggest:   2872652
+Host2 folder     8/9 [[Gmail]/&BCEEPwQwBDw-] = [[Gmail]/Спам] Size:  20054938 Messages:    96 Biggest:   1075964
+Host2 folder     9/9 [[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-] = [[Gmail]/Черновики] Size:         0 Messages:     0 Biggest:         0
+Host2 Nb folders:                9 folders
+Host2 Nb messages:           26991 messages
+Host2 Total size:       2200658592 bytes (2.050 GiB)
+Host2 Biggest message:    27215643 bytes (25.955 MiB)
+Host2 Time spent:            110.4 seconds
+++++ Statistics
+Transfer started on               : Tue Nov  7 18:27:40 2017
+Transfer ended on                 : Tue Nov  7 18:48:40 2017
+Transfer time                     : 1259.7 sec
+Folders synced                    : 9/9 synced
+Messages transferred              : 5 
+Messages skipped                  : 26818
+Messages found duplicate on host1 : 0
+Messages found duplicate on host2 : 3
+Messages void (noheader) on host1 : 0
+Messages void (noheader) on host2 : 0
+Messages deleted on host1         : 0
+Messages deleted on host2         : 0
+Total bytes transferred           : 44459 (43.417 KiB)
+Total bytes duplicate host1       : 0 (0.000 KiB)
+Total bytes duplicate host2       : 27298 (26.658 KiB)
+Total bytes skipped               : 2185400220 (2.035 GiB)
+Total bytes error                 : 0 (0.000 KiB)
+Message rate                      : 0.0 messages/s
+Average bandwidth rate            : 0.0 KiB/s
+Reconnections to host1            : 0
+Reconnections to host2            : 0
+Memory consumption                : 311.3 MiB
+Biggest message                   : 22999 bytes (22.460 KiB)
+Memory/biggest message ratio      : 14194.7
+Start difference host2 - host1    : 165 messages, 15192685 bytes (14.489 MiB)
+Final difference host2 - host1    : 168 messages, 15213913 bytes (14.509 MiB)
+Detected 0 errors
+
+
+Homepage: http://imapsync.lamiral.info/
+Exiting with return value 0
+Log file is LOG_imapsync/2017_11_07_18_27_40_634_a.letova@reactor.com.ua_a.letova@doc.work.ua.txt ( to change it, use --logfile filepath ; or use --nolog to turn off logging )

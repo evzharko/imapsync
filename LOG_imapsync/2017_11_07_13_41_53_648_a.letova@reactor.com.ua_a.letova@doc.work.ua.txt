@@ -1,0 +1,53 @@
+Transfer started at Tue Nov  7 13:41:53 2017
+PID is 2187
+Log file is LOG_imapsync/2017_11_07_13_41_53_648_a.letova@reactor.com.ua_a.letova@doc.work.ua.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 0.41 0.94 2.09 1/1294 on 2 cores
+Current directory is /home/e.zharko/github/imapsync
+Real user id is root (uid 0)
+Effective user id is root (euid 0)
+$RCSfile: imapsync,v $ $Revision: 1.836 $ $Date: 2017/09/05 16:14:53 $ 
+Here is e-zharko, a 15.6 GiB [linux] system (Linux e-zharko 4.9.0-040900-generic #201612111631 SMP Sun Dec 11 21:33:00 UTC 2016 x86_64)
+with Perl 5.22.1 and Mail::IMAPClient 3.38
+Command line used:
+/usr/bin/imapsync --host1 reactor.com.ua --user1 a.letova@reactor.com.ua --password1 MASKED 6 --host2 doc.work.ua --user2 a.letova@doc.work.ua --password2 MASKED 6
+Temp directory is /tmp  ( to change it use --tmpdir dirpath )
+PID file is /tmp/imapsync.pid ( to change it use --pidfile filepath ; to avoid it use --pidfile "" )
+Writing my PID 2187 in /tmp/imapsync.pid
+Modules version list:
+Authen::NTLM         1.09
+Compress::Zlib       2.069
+Crypt::OpenSSL::RSA  0.28
+Data::Uniqid         0.12
+Digest::HMAC_MD5     1.01
+Digest::HMAC_SHA1    1.03
+Digest::MD5          2.54
+File::Copy::Recursive 0.38
+File::Spec           3.56
+Getopt::Long         2.45
+HTML::Entities       3.69
+IO::Socket           1.38
+IO::Socket::INET     1.35
+IO::Socket::INET6    2.72
+IO::Socket::SSL      2.024
+IO::Tee              0.64
+JSON                 2.90
+JSON::WebToken       0.10
+LWP                  6.15
+Mail::IMAPClient     3.38
+Net::Ping            2.43
+Net::SSLeay          1.72
+Term::ReadKey        2.33
+Test::MockObject     1.20161202
+Time::HiRes          1.9726
+URI::Escape          3.31
+Unicode::String      2.10
+( use --no-modulesversion to turn off printing this Perl modules list )
+Info: turned ON syncinternaldates, will set the internal dates (arrival dates) on host2 same as host1.
+Host1: will try to use LOGIN authentication on host1
+Host2: will try to use LOGIN authentication on host2
+Host1: imap connexion timeout is 120 seconds
+Host2: imap connexion timeout is 120 seconds
+Host1: IMAP server [reactor.com.ua] port [143] user [a.letova@reactor.com.ua]
+Host2: IMAP server [doc.work.ua] port [143] user [a.letova@doc.work.ua]
+Host1: connecting and login on host1 [reactor.com.ua] port [143] with user [a.letova@reactor.com.ua]
+Host1 failure: can not open imap connection on host1 [reactor.com.ua] with user [a.letova@reactor.com.ua]: Unable to connect to reactor.com.ua:  Connection refused
